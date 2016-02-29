@@ -22,7 +22,7 @@ if ($conn->connect_error) {
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
@@ -32,8 +32,21 @@ if ($conn->connect_error) {
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 learn-col">
+                    <p class="big-center"> LEARN </p>
+                    <p> Log in </p>
+                    <p> Sign up </p>
+                </div>
+                <div class="col-md-6 teach-col">
+                    <p class="big-center"> TEACH </p>
+                    <p> Log in </p>
+                    <p> Sign up </p>°°
+                </div>
+            </div>
+            
+        </div>
         <?php
         
          $sql = "SELECT * FROM creator LIMIT 5";
