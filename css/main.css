@@ -95,20 +95,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.learn-col {
+    background-color: #B5707C;
+}
+.teach-col {
+    background-color: #1897B5;
+}
+.big-center {
+    padding: 200px;
+    font-size: 40pt;
+    font-weight: bold;
+}
+.logo {
+    height: 50px;
+    margin: 5px 0 5px 0;
+}
+.right {
+    float:right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+.nav-bg {
+    background-color: #BFE8E6;
+}
 
 
 /* ==========================================================================
