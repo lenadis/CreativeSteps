@@ -22,13 +22,13 @@
         <div class="row">
             <div class="col-md-6 learn-col">
                 <p class="big-center"> LEARN </p>
-                <p> Log in </p>
-                <p> Sign up </p>
+                <a href=""> Log in</a> 
+                <a href=""> Sign up</a>
             </div>
             <div class="col-md-6 teach-col">
                 <p class="big-center"> TEACH </p>
-                <p> Log in </p>
-                <p> Sign up </p>
+                <a href="">Log in</a>
+                <a href="">Sign up</a>
             </div>
         </div>            
     </div>
