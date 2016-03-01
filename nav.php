@@ -15,16 +15,27 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 nav-bg">
-				    <img alt="logo" src="img/christmaslogoW.png" class="logo">
-                    <a href="" class="right">Log in</a>
-                    <a href"" class="right">Courses</a>
-                    <a href="" class="right">About us</a>
-				
-			</div>
-			
-		</div>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <img class="logo" src="img/creativestepslogoW.png">
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+              <ul class="nav navbar-nav pull-right">
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Courses </a></li>
+                <li><a href="#"> Sign up </a></li>
+                <li><a href="#"> Log in </a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
 </body>
 </html>

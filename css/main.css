@@ -95,27 +95,46 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.page-content {
+    position: relative;
+    top: 45%;
+}
+
 .learn-col {
-    background-color: #B5707C;
+    background-color: #60AFB8;
+    height: 100%;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 64px;
 }
+
 .teach-col {
-    background-color: #1897B5;
+    background-color: #C16868;
+    height: 100%;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 64px;
 }
+
 .big-center {
-    padding: 200px;
     text-align: center;
     font-size: 40pt;
     font-weight: bold;
 }
+
 .big-center2 {
     text-align: center;
     font-size: 40pt;
     font-weight: bold;
     padding-top: 150px;
 }
+
 .subtitle {
     font-size: 20px;
+    font-family: Raleway;
+    font-weight: bold;
 }
+
 .bar-width {
     width: 45%;
     display: block;
@@ -124,15 +143,23 @@ textarea {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .img-center {
     display: block;
     margin-right: auto;
     margin-left: auto;
 }
+
+.text-center-block {
+    text-align: center;
+    display: block;
+}
+
 .logo {
     height: 50px;
     margin: 5px 0 5px 0;
 }
+
 .icon {
     display: block;
     height: 70px;
@@ -140,16 +167,53 @@ textarea {
     margin-right: auto;
     padding-bottom: 10px;
 }
+
+.page {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .right {
     float:right;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-right: 20px;
 }
-.nav-bg {
-    background-color: #BFE8E6;
+
+.btn-default {
+    background-color: transparent;
+    color: #E5E3E3;
+    border-color: #E5E3E3;
+    border-radius: 0;
+}
+/* Navigation */
+.nav {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    height: 25px;
+}
+.navbar-inverse {
+    background-color: transparent;
+    border: none;
+    padding-top: 8px;
+}
+.navbar .container {
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
+.navbar-inverse .navbar-toggle {
+    border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #E5E3E3;
+}
 
 /* ==========================================================================
    Helper classes
