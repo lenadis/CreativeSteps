@@ -113,6 +113,9 @@ textarea {
     font-weight: bold;
     padding-top: 150px;
 }
+.subtitle {
+    font-size: 20px;
+}
 .bar-width {
     width: 45%;
     display: block;
