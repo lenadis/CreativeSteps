@@ -32,21 +32,6 @@ if ($conn->connect_error) {
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 learn-col">
-                    <p class="big-center"> LEARN </p>
-                    <p> Log in </p>
-                    <p> Sign up </p>
-                </div>
-                <div class="col-md-6 teach-col">
-                    <p class="big-center"> TEACH </p>
-                    <p> Log in </p>
-                    <p> Sign up </p>°°
-                </div>
-            </div>
-            
-        </div>
         <?php
         
          $sql = "SELECT * FROM creator LIMIT 5";
