@@ -103,12 +103,39 @@ textarea {
 }
 .big-center {
     padding: 200px;
+    text-align: center;
     font-size: 40pt;
     font-weight: bold;
+}
+.big-center2 {
+    text-align: center;
+    font-size: 40pt;
+    font-weight: bold;
+    padding-top: 150px;
+}
+.bar-width {
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.img-center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 .logo {
     height: 50px;
     margin: 5px 0 5px 0;
+}
+.icon {
+    display: block;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
 }
 .right {
     float:right;
