@@ -1,3 +1,7 @@
+<?php
+    include 'nav.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +19,9 @@
             <div class="col-md-6 teach-col">
                 <p class="big-center"> TEACH </p>
                 <p> Log in </p>
-                <p> Sign up </p>°°
+                <p> Sign up </p>
             </div>
-        </div>
-            
+        </div>            
     </div>
-    
 </body>
 </html>
