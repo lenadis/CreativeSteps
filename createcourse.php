@@ -24,53 +24,31 @@ include 'db.php';
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <?php
-        /*
-         $sql = "SELECT * FROM creator LIMIT 5";
-                            $result = $db->query($sql);
-                            $counter = 0;
-                            while ($row = $result->fetch_assoc()) { 
-                                $counter++; 
-                               ?>
-                                <p>
-                                <?php 
-                            
-                                echo $row["name"];
-                                ?>
-                                </p>
-                                <?php
-                            } 
-       */
-        ?>
-        <form action="insert.php" method="post">
-            <p>
+        
+        <form action="insertcourse.php" method="post">
                 <label for="name">Name: </label>
-                <input type="text" name="name" id="name">
-            </p>
-            <p>
-                <label for="email">Email: </label>
-                <input type="text" name="email" id="email">
-            </p>
-            <p>
-                <label for="pass">Password: </label>
-                <input type="password" name="pass" id="pass">
-            </p> 
-            <p>
-                <label for="age">Age: </label>
-                <input type="number" name="age" id="age">
-            </p>
-            <p>
+                <input type="text" name="name" id="name" required>
+                <label for="email">Date: </label>
+                <input type="date" name="date" id="date" required>
+<!--
                 <label for="photo">Photo: </label>
-                <input type="file" name="photo" id="photo">
-            </p>
-            <p>
-                <label for="profession">Profession: </label>
-                <input type="text" name="profession" id="profession">
-            </p>
-            <p>
-                <label for="description">Description: </label>
-                <input type="text" name="description" id="description">
-            </p>
+                <input type="file" name="photo" id="photo" required>
+-->
+                <label for="subject">
+                    Subject: 
+                    <select name="subject">
+                        <option>Photography</option>
+                        <option>Design</option>
+                        <option>Sewing</option>
+                        <option>Baking</option>
+                        <option>Other</option>
+                    </select>
+                </label>
+                <label for="price">Price: </label>
+                <input type="number" name="price" id="price" required>
+                <label for="description">Description:
+                <textarea name="description" required></textarea>
+                </label>
             
             <input type="submit" value="Submit">
         
