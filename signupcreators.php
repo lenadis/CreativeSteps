@@ -42,34 +42,36 @@ include 'db.php';
                             } 
        */
         ?>
-        <form action="insert.php" method="post">
+        <form action="insertcreators.php" method="post">
             <p>
                 <label for="name">Name: </label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required>
             </p>
             <p>
                 <label for="email">Email: </label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" required>
             </p>
             <p>
                 <label for="pass">Password: </label>
-                <input type="password" name="pass" id="pass">
+                <input type="password" name="pass" id="pass" required>
             </p> 
             <p>
                 <label for="age">Age: </label>
-                <input type="number" name="age" id="age">
+                <input type="number" name="age" id="age" required>
             </p>
+<!--
             <p>
                 <label for="photo">Photo: </label>
-                <input type="file" name="photo" id="photo">
+                <input type="file" name="photo" id="photo" required>
             </p>
+-->
             <p>
                 <label for="profession">Profession: </label>
-                <input type="text" name="profession" id="profession">
+                <input type="text" name="profession" id="profession" required>
             </p>
             <p>
                 <label for="description">Description: </label>
-                <input type="text" name="description" id="description">
+                <input type="text" name="description" id="description" required>
             </p>
             
             <input type="submit" value="Submit">
