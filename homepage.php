@@ -27,13 +27,17 @@
         <div class="col-md-6 learn-col">
             <div class="page-content text-center">
                 <p class="big-center"> LEARN </p>
-                <a class="subtitle btn btn-default" href=""> Be awesome </a> 
+                <a class="subtitle btn btn-default" href=""> Sign up</a> <br>
+                <a class="subtitle btn btn-default" href=""> Log in </a> <br>
+
             </div>
         </div>
         <div class="col-md-6 teach-col">
             <div class="page-content text-center">
                 <p class="big-center"> TEACH </p>
-                <a class="subtitle btn btn-default" href=""> Share your knowledge </a>
+                <a class="subtitle btn btn-default" href=""> Sign up </a> <br>
+                <a class="subtitle btn btn-default" href=""> Log in </a> <br>
+
             </div>
         </div>
     </div>
