@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+include 'nav.php';
 ?>
 
 <!doctype html>
@@ -25,14 +26,20 @@ include 'db.php';
 
         <!-- Add your site or application content here -->
         
-        <form action="insertcourse.php" enctype="multipart/form-data" method="post">
-                <label for="name">Name: </label>
+<div class="background bg-blue page"></div>
+<div class="row">
+    <div class="col-md-12 padding-top">
+    <div>
+        <p class="subtitle text-center"> Please log in to the creative world of CreativeSteps </p>
+    </div>
+        <form action="insertcourse.php" enctype="multipart/form-data" method="post" id="form">
+                <label for="name" class="contact-label">Name: </label>
                 <input type="text" name="name" id="name" required>
-                <label for="email">Date: </label>
+                <label for="email" class="contact-label">Date: </label>
                 <input type="date" name="date" id="date" required>
-                <label for="photo">Photo: </label>
+                <label for="photo" class="contact-label">Photo: </label>
                 <input type="file" name="photo" id="photo" required>
-                <label for="subject">
+                <label for="subject" class="contact-label">
                     Subject: 
                     <select name="subject">
                         <option>Photography</option>
@@ -42,10 +49,10 @@ include 'db.php';
                         <option>Other</option>
                     </select>
                 </label>
-                <label for="price">Price: </label>
+                <label for="price" class="contact-label">Price: </label>
                 <input type="number" name="price" id="price" required>
-                <label for="description">Description:
-                <textarea name="description" required></textarea>
+                <label for="description" class="contact-label">Description:
+                <textarea name="description"required></textarea>
                 </label>
             
             <input type="submit" value="Submit">
