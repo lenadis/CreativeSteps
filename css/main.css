@@ -123,11 +123,11 @@ ul {
     background-color: rgba(96,175,184,0.8);
 }
 
-.page-contact {
+.page-contact, .page-aboutus {
     background-color: rgba(193,104,104,0.8);
 }
 
-/* can be killed */
+
 .bg-blue {
     background-color: rgba(96,175,184,0.8);
 }
@@ -139,7 +139,6 @@ ul {
 
 .lightred-col {
     background-color: rgba(193,104,104,0.8);
-    /* has no affect */
     height: 100%; 
 }
 
