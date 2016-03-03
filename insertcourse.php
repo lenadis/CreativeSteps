@@ -15,7 +15,7 @@ $description = $_POST['description'];
 $stmt = $db->prepare("INSERT INTO course (creator_id, name, date, subject, price, description, photo) 
                      VALUES (:creator_id,:name, :date, :subject, :price, :description, :photo)" );
 
-$stmt->bindValue(':creator_id', $_SESSION['user_id']);
+$stmt->bindValue(':creator_id', $_SESSION['creator_id']);
 $stmt->bindValue(':name', $name);
 $stmt->bindValue(':date', $date);
 $stmt->bindValue(':subject', $subject);
