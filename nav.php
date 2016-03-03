@@ -30,7 +30,7 @@
               <ul class="nav navbar-nav pull-right">
                 <li><a href="aboutus.php"> About us</a></li>
                 <li><a href="courses.php"> Courses </a></li>
-                <li><a href="#"> Contact </a></li>
+                <li><a href="contact.php"> Contact </a></li>
               </ul>
             </div><!--/.nav-collapse -->
         </div>

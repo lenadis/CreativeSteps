@@ -1,58 +1,49 @@
 <?php
 include 'db.php';
+include 'nav.php';
 ?>
 
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="col-md-6 red-col">
+    <p class="big-center"> We love you! </p> <br> 
+    <p class="title"> Thank you for contributing your skills and time to Creative Steps. Together we can increase creatity and imagination in children.</p>
+</div>
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
-        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
-    <body>
+<div class="col-md-6 lightred-col">
+    <div class="content3">
         <form action="insertcreators.php" enctype="multipart/form-data" method="post">
-            <p>
+            <div class="form-group">
                 <label for="name">Name: </label>
-                <input type="text" name="name" id="name" required>
-            </p>
-            <p>
+                <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+            <div class="form-group">
                 <label for="email">Email: </label>
-                <input type="text" name="email" id="email" required>
-            </p>
-            <p>
+                <input type="text" name="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group"
                 <label for="pass">Password: </label>
-                <input type="password" name="pass" id="pass" required>
-            </p> 
-            <p>
+                <input type="password" name="pass" id="pass" class="form-control" required>
+            </div> 
+            <div class="form-group">
                 <label for="age">Age: </label>
-                <input type="number" name="age" id="age" required>
-            </p>
-            
-            <p>
+                <input type="number" name="age" id="age" class="form-control" required>
+            </div>
+            <div class="form-group">
                 <label for="profession">Profession: </label>
-                <input type="text" name="profession" id="profession" required>
-            </p>
-            <p>
+                <input type="text" name="profession" id="profession" class="form-control" required>
+            </div>
+            <div class="form-group">
                 <label for="description">Description: </label>
-                <input type="text" name="description" id="description" required>
-            </p>
-            <p>
+                <input type="text" name="description" id="description" class="form-control" required>
+            </div>
+            <div>
                 <label for="photo">Photo: </label>
-                <input type="file" name="photo" id="photo" required>
-            </p>
+                <input type="file" name="photo" id="photo"required>
+            </div> <br>
             
             <input type="submit" value="Submit">
-        
         </form>
+    </div>
+</div>
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
