@@ -1,8 +1,12 @@
 <?php
-    include 'nav.php';
+	// set the 'pageID' variable which is used in 'nav.php'
+	// to set the class of body.
+	$pageID = 'courses';
+   	
+   	include 'nav.php';
 ?>	
-	<div class="background page bg-blue"></div>
     <div class="container">
+
 	    <div class="row">
 	    	<p class="big-center2"> Subjects </p>
 	    	<div class="row padding-top-bottom">
