@@ -28,7 +28,10 @@ session_start();
                 <a class="subtitle btn btn-default" href="logincreator.php"> Log in </a> <br>
                 <?php
                 }
-?>
+                ?>
+                <div> 
+                    <img class="right-socialmedia"src="img/socialmedia.png">
+                </div>
             </div>
         </div>
     </div>

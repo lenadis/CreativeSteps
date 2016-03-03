@@ -281,6 +281,13 @@ ul {
     color: #fff;
 }
 
+.right-socialmedia {
+    float:right;
+    margin-top: 40px;
+    padding-right: 5px;
+    color: #fff;
+}
+
 .btn-default {
     background-color: transparent;
     color: #fff;

@@ -41,7 +41,9 @@
 					that Creative Steps offers.
                 </p>
                 	<a class="subtitle btn btn-default" href="courses.php"> Become a junior stepper </a> 
-                </div> 
+                </div>
+                <div> <img class="right-socialmedia"src="img/socialmedia.png"></div>
+ 
             </div>
     	</div>
     </div>
