@@ -9,9 +9,28 @@ session_start();
                     if(isset($_SESSION['user_type']) && $_SESSION['user_type']=='creator'){
                     //we are creators
                 ?>
-                <img alt="profilephoto" src=""
+                
+                 <div>
+  <img src="img/<?php echo $_SESSION['user_type']; ?>" alt="picture"/>
+</div>   
+                    <h2>HERE ARE YOUR COURSES</h2> 
                     
-                    <h2>HERE ARE YOUR COURSES</h2>
+                        <?php 
+                           
+                            $sql = "SELECT * FROM artists LIMIT 5";
+                            $result = $conn->query($sql);
+                            $counter = 0;
+                            while ($row = $result->fetch_assoc()) { 
+                                $counter++; 
+                                if ($counter <= 2) {
+                               ?>
+                        <div class="col-xs-6 nopadding maxheightandwidth">
+                        <?php
+                            echo "<img src=artists/".$row["fileName"]." "."class='img-responsive maxheight250px' alt='artist'> </div>";
+                            } 
+                        else {
+                            ?>
+                
                 <p><a href='createcourse.php'>Add a new one</a></p>
                     <?php
                 } else {
