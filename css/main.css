@@ -362,16 +362,13 @@ ul {
     margin-right:auto;
 }
 
-label{
-    width: 100%;
-}
-
-input, textarea{
+.contact-label, .contact-input{
     width: 100%;
 }
 
 textarea{
     height: 100px;
+    width: 100%;
 }
 
 #send{

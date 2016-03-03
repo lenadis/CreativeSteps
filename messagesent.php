@@ -8,19 +8,19 @@
                 <p><h2 class="text-center">Your message has been successfully sent!</h2></p>
                 <section>
                     <form  id="form" action="insertmessage.php" method="post">
-                        <label>
+                        <label class="contact-label">
                             Name
                             <input type="text" name="author">
                         </label>
-                        <label>
+                        <label class="contact-label">
                             Email
                             <input type="email" name="email">
                         </label>
-                        <label>
+                        <label class="contact-label">
                             Phone
                             <input type="tel" name="phone">
                         </label>
-                        <label>
+                        <label class="contact-label">
                             Message
                             <textarea name="message"></textarea>
                         </label>
