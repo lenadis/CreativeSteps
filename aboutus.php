@@ -1,4 +1,6 @@
 <?php 
+    $pageID = 'aboutus';
+
 	include 'nav.php';
 ?>
 	<div class="row page">

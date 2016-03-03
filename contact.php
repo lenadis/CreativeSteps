@@ -1,5 +1,7 @@
 <?php 
-	include 'nav.php';
+    $pageID = 'contact';
+	
+    include 'nav.php';
 ?>
 	<div class="row page">
         <div class="col-md-6 red-col">

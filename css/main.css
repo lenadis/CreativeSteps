@@ -114,13 +114,22 @@ ul {
     top: 20%;
 }
 
-.background {
+.background,
+.background-container {
     z-index: -1;
 }
 
+.page-courses {
+    background-color: rgba(96,175,184,0.8);
+}
+
+.page-contact, .page-aboutus {
+    background-color: rgba(193,104,104,0.8);
+}
+
+
 .bg-blue {
     background-color: rgba(96,175,184,0.8);
-    height: 100%;
 }
 
 .red-col {
@@ -130,7 +139,7 @@ ul {
 
 .lightred-col {
     background-color: rgba(193,104,104,0.8);
-    height: 100%;
+    height: 100%; 
 }
 
 .blue-col {
