@@ -1,9 +1,5 @@
 <?php
-
 include 'db.php';
-
-
-
 
 //Escape user inputs for security
 //$name = mysqli_real_escape_string($conn, $_POST['name']);
