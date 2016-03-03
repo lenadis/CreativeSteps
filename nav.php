@@ -24,12 +24,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-              <img class="logo" src="img/creativestepslogoW.png">
+              <a href="homepage.php"><img class="logo" src="img/creativestepslogoW.png"></a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav pull-right">
                 <li><a href="#"> About us</a></li>
-                <li><a href="#"> Courses </a></li>
+                <li><a href="courses.php"> Courses </a></li>
                 <li><a href="#"> Sign up </a></li>
                 <li><a href="#"> Log in </a></li>
               </ul>
