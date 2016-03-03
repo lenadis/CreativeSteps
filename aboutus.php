@@ -3,7 +3,7 @@
 ?>
 	<div class="row page">
         <div class="col-md-6 red-col">
-            <div class="page-content">
+            <div class="page-content2">
                 <p class="bodytext"> Creative Steps is an online community where 
 					children at the age of 4 to 15 can take online 
 					creative classes taught by creative individuals.
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="col-md-6 lightred-col">
-            <div class="page-content">
+            <div class="page-content2">
                 <p class="bodytext"> Creative Steps is an online community where 
 					children at the age of 4 to 15 can take online 
 					creative classes taught by creative individuals.
