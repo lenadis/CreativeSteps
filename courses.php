@@ -27,8 +27,10 @@
 	    <p class="big-center"> Popular courses </p>
 	    <div class="row">
 	        <div class="col-md-4">
-	        <!-- Photo name of classes and maybe description? or show more button loop? -->	        	
+	        <!-- Photo name of classes and maybe description? or show more button loop? -->	       
 	        </div>
+	        <div> <img class="right-socialmedia"src="img/socialmedia.png"></div>
+
 	    </div>      
 	</div>
 
