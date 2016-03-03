@@ -6,7 +6,7 @@ include 'db.php';
 // Escape user inputs for security
 $name = $_POST['name'];
 $email = $_POST['email'];
-$pass = $_POST['pass'];
+$pass = sha1($_POST['pass']);
 $age = $_POST['age'];
 $profession = $_POST['profession'];
 $description = $_POST['description'];
