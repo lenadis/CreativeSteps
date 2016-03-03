@@ -45,20 +45,6 @@ else {
     echo("ERRORERROEREROERO");
 }
 
-        
-//if(move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)){
-//    echo "File valid, photo successfully uploaded";
-//    }
-//else {
-//    echo "File not valid, please try another photo";
-//    }
-//
-//if ($stmt->execute()){
-//    header("Location: homepage.php");
-//}
-//else {
-//    echo("ERRORERROEREROERO");
-//}
     
 ?>
 
