@@ -10,15 +10,15 @@
                     <form  id="form" action="insertmessage.php" method="post">
                         <label class="contact-label">
                             Name
-                            <input type="text" name="author">
+                            <input type="text" name="author" class="contact-input">
                         </label>
                         <label class="contact-label">
                             Email
-                            <input type="email" name="email">
+                            <input type="email" name="email" class="contact-input">
                         </label>
                         <label class="contact-label">
                             Phone
-                            <input type="tel" name="phone">
+                            <input type="tel" name="phone" class="contact-input">
                         </label>
                         <label class="contact-label">
                             Message
