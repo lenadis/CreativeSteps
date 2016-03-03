@@ -28,7 +28,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse">
               <ul class="nav navbar-nav pull-right">
-                <li><a href="#"> About us</a></li>
+                <li><a href="aboutus.php"> About us</a></li>
                 <li><a href="courses.php"> Courses </a></li>
                 <li><a href="#"> Contact </a></li>
               </ul>
