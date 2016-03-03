@@ -41,7 +41,7 @@ include 'nav.php';
             </div>
             <div>
                 <label for="photo">Photo: </label>
-                <input type="file" name="photo" id="photo"required>
+                <input type="file" name="photo" id="photo" required>
             </div> <br>
             
             <input type="submit" value="Submit">
