@@ -25,15 +25,13 @@ include 'db.php';
 
         <!-- Add your site or application content here -->
         
-        <form action="insertcourse.php" method="post">
+        <form action="insertcourse.php" enctype="multipart/form-data" method="post">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" required>
                 <label for="email">Date: </label>
                 <input type="date" name="date" id="date" required>
-<!--
                 <label for="photo">Photo: </label>
                 <input type="file" name="photo" id="photo" required>
--->
                 <label for="subject">
                     Subject: 
                     <select name="subject">
