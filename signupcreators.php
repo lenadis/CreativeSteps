@@ -12,7 +12,7 @@ include 'nav.php';
 </div>
 
 <div class="col-md-6 lightred-col">
-    <div class="page-content2">
+    <div class="padding-top-contact">
     <div class="content3">
         <form action="insertcreators.php" enctype="multipart/form-data" method="post">
             <div class="form-group">
