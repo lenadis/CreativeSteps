@@ -38,6 +38,7 @@ if ($stmt->execute()){
     else {
         echo "File not valid, please try another photo";
     }
+    $_SESSION['course_id']=$db->lastInsertId();
     header("Location: coursepage.php");
 }
 else {

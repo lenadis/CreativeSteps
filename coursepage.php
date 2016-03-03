@@ -1,12 +1,14 @@
 <?php
+    session_start();
     include 'nav.php';
+    include 'db.php';
 ?>	
 <div class="container">
 	<div class="row page">
         <div class="col-md-6 blue-col">
             <div class="page-content3 text-center">
             	<p class="big-center"> Photography 101</p>
-            	<img class="course-img"src="img/photography101.jpg"> <br><!-- Course pic from db -->
+            	<img class="course-img" src="img/course/<?php echo $_SESSION['course_id'] . ".jpg"; ?>"> <br><!-- Course pic from db -->
             	<p class="right"> Length/stars <!-- length/stars from db --> </p> <br>
                 <p class="bodytext"> 
                 	Course description from db 
