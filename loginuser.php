@@ -17,7 +17,7 @@ include 'db.php';
 //}
 ?>
 
-<form action="actions/login.php" method="post">
+<form action="actions/insertloginuser.php" method="post">
     <label>
         email:
         <input type="email" name="email">

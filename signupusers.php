@@ -19,30 +19,8 @@ include 'db.php';
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- Add your site or application content here -->
-        <?php
-        /*
-         $sql = "SELECT * FROM creator LIMIT 5";
-                            $result = $db->query($sql);
-                            $counter = 0;
-                            while ($row = $result->fetch_assoc()) { 
-                                $counter++; 
-                               ?>
-                                <p>
-                                <?php 
-                            
-                                echo $row["name"];
-                                ?>
-                                </p>
-                                <?php
-                            } 
-       */
-        ?>
-        <form action="insertusers.php" method="post">
+       
+        <form action="insertusers.php" enctype="multipart/form-data" method="post">
             <p>
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" required>
@@ -59,12 +37,10 @@ include 'db.php';
                 <label for="age">Age: </label>
                 <input type="number" name="age" id="age" required>
             </p>
-<!--
             <p>
                 <label for="photo">Photo: </label>
                 <input type="file" name="photo" id="photo" required>
             </p>
--->
             <p>
                 <label for="interests">Interests </label>
                 <input type="text" name="interests" id="interests" required>
@@ -72,7 +48,9 @@ include 'db.php';
             
             <input type="submit" value="Submit">
         
+        
         </form>
+         
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
