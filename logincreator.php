@@ -14,23 +14,29 @@ include 'nav.php';
 //}
 ?>
 <div class="background bg-blue page"></div>
-
-<p class="subtitle text-center"> Please log in to the creative world of CreativeSteps </p>
-<form action="actions/insertlogincreator.php" method="post" class="padding-left">
-    <div class="form-group">
-    <label>
-       <p> email: <p>
-        <input type="email" name="email">
-    </label>
+<div class="row">
+    <div class="col-md-12 padding-top">
+    <div>
+        <p class="subtitle text-center"> Please log in to the creative world of CreativeSteps </p>
     </div>
-    <div class="form-group">
-    <label>
-        <p> password: </p>
-        <input type="pass" name="pass">
-    </label>
+    <form action="actions/insertlogincreator.php" method="post" class="padding-left">
+        <div class="form-group">
+        <label>
+           <p> email: </p>
+            <input type="email" name="email">
+        </label>
+        </div>
+        <div class="form-group">
+        <label>
+            <p> password: </p>
+            <input type="pass" name="pass">
+        </label>
+        </div>
+        <input type="submit" value="Log In">
+    </form>
     </div>
-    <input type="submit" value="Log In">
-</form>
+    <
+</div>
 <?php
 
 ?>

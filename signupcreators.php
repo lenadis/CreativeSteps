@@ -2,13 +2,17 @@
 include 'db.php';
 include 'nav.php';
 ?>
-
+<div class="row page">
 <div class="col-md-6 red-col">
+    <div class="page-content2 text-center">
+
     <p class="big-center"> We love you! </p> <br> 
     <p class="title"> Thank you for contributing your skills and time to Creative Steps. Together we can increase creatity and imagination in children.</p>
+    </div>
 </div>
 
 <div class="col-md-6 lightred-col">
+    <div class="page-content2">
     <div class="content3">
         <form action="insertcreators.php" enctype="multipart/form-data" method="post">
             <div class="form-group">
@@ -42,6 +46,8 @@ include 'nav.php';
             
             <input type="submit" value="Submit">
         </form>
+        </div>
+    </div>
     </div>
 </div>
 
