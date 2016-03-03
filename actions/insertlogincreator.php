@@ -13,7 +13,7 @@ if($user = $stmt->fetchObject()){
     $_SESSION['name']=$user->name;
     $_SESSION['user_id']=$user->creator_id;
     $_SESSION['user_type']="creator";
-    header("location: ../homepage.php"); 
+    header("location: ../creatorprofile.php"); 
 } else {
     die("Your username or password was incorrect");
 }

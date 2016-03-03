@@ -19,7 +19,7 @@ include 'db.php';
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <form action="insertcreators.php" method="post">
+        <form action="insertcreators.php" enctype="multipart/form-data" method="post">
             <p>
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" required>
@@ -36,12 +36,7 @@ include 'db.php';
                 <label for="age">Age: </label>
                 <input type="number" name="age" id="age" required>
             </p>
-<!--
-            <p>
-                <label for="photo">Photo: </label>
-                <input type="file" name="photo" id="photo" required>
-            </p>
--->
+            
             <p>
                 <label for="profession">Profession: </label>
                 <input type="text" name="profession" id="profession" required>
@@ -49,6 +44,10 @@ include 'db.php';
             <p>
                 <label for="description">Description: </label>
                 <input type="text" name="description" id="description" required>
+            </p>
+            <p>
+                <label for="photo">Photo: </label>
+                <input type="file" name="photo" id="photo" required>
             </p>
             
             <input type="submit" value="Submit">

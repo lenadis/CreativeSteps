@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $pass = $_POST['pass'];
 $interests = $_POST['interests'];
 $age = $_POST['age'];
-$photo = $_POST['photo'];
+$photo = $_FILES['photo']['name'];
 
 
 $stmt = $db->prepare("INSERT INTO user (name, email, pass, interests, age, photo) 
