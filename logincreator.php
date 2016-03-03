@@ -1,5 +1,6 @@
 <?php
 include 'db.php';
+include 'nav.php';
 
 //Escape user inputs for security
 //$name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -12,16 +13,22 @@ include 'db.php';
 //    echo "ERROR: Could not execute $sql. " . mysqli_error($conn);
 //}
 ?>
+<div class="background bg-blue page"></div>
 
-<form action="actions/insertlogincreator.php" method="post">
+<p class="subtitle text-center"> Please log in to the creative world of CreativeSteps </p>
+<form action="actions/insertlogincreator.php" method="post" class="padding-left">
+    <div class="form-group">
     <label>
-        email:
+       <p> email: <p>
         <input type="email" name="email">
     </label>
+    </div>
+    <div class="form-group">
     <label>
-        password:
+        <p> password: </p>
         <input type="pass" name="pass">
     </label>
+    </div>
     <input type="submit" value="Log In">
 </form>
 <?php
