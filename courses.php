@@ -2,7 +2,8 @@
 	// set the 'pageID' variable which is used in 'nav.php'
 	// to set the class of body.
 	$pageID = 'courses';
-   	
+   	session_start();
+    include 'db.php';
    	include 'nav.php';
 ?>	
     <div class="container">
@@ -31,7 +32,21 @@
 	    <p class="big-center"> Popular courses </p>
 	    <div class="row">
 	        <div class="col-md-4">
-	        <!-- Photo name of classes and maybe description? or show more button loop? -->	       
+	        <!-- Photo name of classes and maybe description? or show more button loop? -->	
+                <?php 
+                    $query = $db->prepare("SELECT * FROM course");
+                    $query->execute();
+                    $result = $query;
+                        foreach ($query as $row) {
+                            //var_dump($row);
+                            ?><img class="course-img" src="img/course/<?php echo $row['course_id'] . ".jpg"; ?>"><h3><?php
+                            echo $row["name"];
+                            ?></h3><h5><?php
+                            echo $row["description"];
+                            ?></h5><?php
+                        }
+
+                ?>
 	        </div>
 	        <div> <img class="right-socialmedia"src="img/socialmedia.png"></div>
 

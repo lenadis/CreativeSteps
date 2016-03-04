@@ -33,7 +33,7 @@
 }
                 ?>
                 <div>
-                <br><a class="subtitle padding-courses"href='createcourse.php'>Add a new one</a>  
+                <br><a class="subtitle padding-courses" href='createcourse.php'>Add a new one</a>  
                 </div> 
                 <?php
                 
