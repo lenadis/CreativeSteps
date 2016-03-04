@@ -119,37 +119,12 @@ ul {
     z-index: -1;
 }
 
-.page-courses {
+.page-courses, .page-welcomeback {
     background-color: rgba(96,175,184,0.8);
 }
 
-.page-contact, .page-aboutus {
+.page-contact, .page-aboutus, .page-creatorprofile {
     background-color: rgba(193,104,104,0.8);
-}
-
-
-.bg-blue {
-    background-color: rgba(96,175,184,0.8);
-}
-
-.red-col {
-    background-color: #C16868;
-    height: 100%;
-}
-
-.lightred-col {
-    background-color: rgba(193,104,104,0.8);
-    height: 100%; 
-}
-
-.blue-col {
-    background-color: #60AFB8;
-    height: 100%;
-}
-
-.lightblue-col {
-    background-color: rgba(96,175,184,0.8);
-    height: 100%;
 }
 
 .learn-col {
@@ -220,6 +195,10 @@ ul {
     padding-left: 40%;
 }
 
+.padding-courses {
+    padding-left: 10%;
+}
+
 .video-center {
     width: 560px; /* you have to have a size or this method doesn't work */
     height: 315px; /* think about making these max-width instead - might give you some more responsiveness */
@@ -250,6 +229,11 @@ ul {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+.creator-img {
+    height: 300px;
+    width: 300px;
 }
 
 .text-center-block {
@@ -394,6 +378,30 @@ textarea{
     margin:0 auto;
     max-height: 400px;
     max-width: 400px;
+}
+/*  */
+.bg-blue {
+    background-color: rgba(96,175,184,0.8);
+}
+
+.red-col {
+    background-color: #C16868;
+    height: 100%;
+}
+
+.lightred-col {
+    background-color: rgba(193,104,104,0.8);
+    height: 100%; 
+}
+
+.blue-col {
+    background-color: #60AFB8;
+    height: 100%;
+}
+
+.lightblue-col {
+    background-color: rgba(96,175,184,0.8);
+    height: 100%;
 }
 /* ==========================================================================
    Helper classes

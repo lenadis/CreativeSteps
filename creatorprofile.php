@@ -1,4 +1,5 @@
 <?php
+    $pageID = 'creatorprofile';
     session_start();
     include 'nav.php';
     include 'db.php';
@@ -10,12 +11,12 @@
                     if(isset($_SESSION['user_type']) && $_SESSION['user_type']=='creator'){
                     //we are creators
                 ?>
-                
-                 <div>
-  <img src="img/<?php echo $_SESSION['user_type'] . "/" . $_SESSION['user_id'] . ".jpg"; ?>" alt="picture"/>
-                     <h2><?php echo $_SESSION['name'] ?></h2>
-</div>   
-                <h2>HERE ARE YOUR COURSES</h2>
+            </div>    
+            <div>
+                <img class="creator-img img-center padding-top" src="img/<?php echo $_SESSION['user_type'] . "/" . $_SESSION['user_id'] . ".jpg"; ?>" alt="picture"/>
+                <p class="big-center"><?php echo $_SESSION['name'] ?></p>
+            </div>   
+                <p class="subtitle padding-courses">HERE ARE YOUR COURSES</p>
                 <?php 
                     $temp = $_SESSION['user_id'];
                     $query = $db->prepare("SELECT * FROM course WHERE creator_id= '".$temp. "'");
@@ -31,13 +32,9 @@
                         }
 }
                 ?>
-                <br><a href='createcourse.php'>Add a new one</a>   
-                <div class="col-xs-6 nopadding maxheightandwidth">
-                
-                   
-                <p class="big-center"> TEACH </p>
-                <a class="subtitle btn btn-default" href="signupcreators.php"> Sign up </a> <br>
-                <a class="subtitle btn btn-default" href="logincreator.php"> Log in </a> <br>
+                <div>
+                <br><a class="subtitle padding-courses"href='createcourse.php'>Add a new one</a>  
+                </div> 
                 <?php
                 
 ?>
