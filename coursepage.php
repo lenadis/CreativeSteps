@@ -25,7 +25,7 @@
             	<p class="title"> Classes </p>
 				<ul>
 					<li><img class="classicon"src="img/greetingcircle.png">
-					<a href=""> Introduction <!-- Class1 inside the course from db --> </a></li><br>
+					<a href="classpage.php"> Introduction <!-- Class1 inside the course from db --> </a></li><br>
 					<li><img class="classicon"src="img/projectcircle.png"> 
 					<a href=""> Our project <!-- Class2 inside the course from db --> </a></li><br>
 					<li><img class="classicon"src="img/cameracircle.png"> 
