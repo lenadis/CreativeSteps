@@ -28,12 +28,18 @@ $uploaddir = "img/course/";
         
 echo '<pre>';
 
-if ($stmt->execute()){
-    
-    $uploadfile = $uploaddir . basename($db->lastInsertId() . ".jpg");
+$parts = explode('.', $_FILES['photo']['name']);
+//Splits up the filename where dots are.
+$last = array_pop($parts);
+$allowed = array('jpg');
+if(in_array($last, $allowed)){
 
-    if(move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)){
+    if ($stmt->execute()){
+        $uploadfile = $uploaddir . basename($db->lastInsertId() . ".jpg");
+
+        if(move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)){
     
+        }
     }
     else {
         echo "File not valid, please try another photo";
@@ -42,7 +48,7 @@ if ($stmt->execute()){
     header("Location: coursepage.php");
 }
 else {
-    echo("ERRORERROEREROERO");
+    echo("Wrong type of file uploaded, we only accept jpg.");
 }
 
     

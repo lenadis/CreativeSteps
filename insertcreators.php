@@ -27,20 +27,28 @@ $uploaddir = "img/creator/";
         
 echo '<pre>';
         
+//if($_FILES['photo']['error']!=0) 
+$parts = explode('.', $_FILES['photo']['name']);
+//Splits up the filename where dots are.
+$last = array_pop($parts);
+$allowed = array('jpg');
+if(in_array($last, $allowed)){
 
-if ($stmt->execute()){
     
-    $uploadfile = $uploaddir . basename($db->lastInsertId() . ".jpg");
+    if ($stmt->execute()){
 
-    if(move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)){
-    
-    }
+        $uploadfile = $uploaddir . basename($db->lastInsertId() . "." . $last);
+
+        if(move_uploaded_file($_FILES['photo']['tmp_name'], $uploadfile)){
+
+        }
+}
     else {
         echo "File not valid, please try another photo";
     }
     header("Location: logincreator.php");
 }
 else {
-    echo("ERRORERROEREROERO");
+    echo("Wrong type of file uploaded, we only accept jpg.");
 }
 ?>

@@ -1,6 +1,8 @@
 <?php
     $pageID = 'welcomeback';
     include 'nav.php';
+    include 'db.php';
+    session_start();
 ?>
 <!--     <div>
         <a href="" "right"> the image for user </a>
@@ -9,7 +11,14 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="big-center2"> Welcome back </p> 
-                <p class="user-name"> Mia Lund <!-- add name of user --></p>
+                <p class="user-name"> 
+                <?php
+                    $query = $db->prepare("SELECT * FROM creator WHERE");
+                    $query->execute();
+                    $result = $query;?>
+                <h3><?php
+                            echo $row["name"];
+                            ?></h3></p>
             </div>
         </div> 
         <div class="text-center">
